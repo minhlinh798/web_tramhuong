@@ -1,0 +1,290 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    position: relative;
+    height: 100%;
+    margin: auto;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffff;
+}
+.header-top {
+    background-color: #2C5F2D;
+    color: rgb(246, 132, 10);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    font-size: 15px;
+}
+/* Khi màn hình nhỏ hơn 768px (điện thoại) */
+@media (max-width: 768px) {
+    body {
+      font-size: 14px;
+      padding: 10px;
+    }
+    .container {
+      flex-direction: column; /* Chuyển từ ngang sang dọc */
+    }
+}
+.left p {
+    font-weight: bold;
+}
+.left {
+    padding-left: 150px;
+}
+.header-top .right ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+.header-top .right ul li a {
+    color: white;
+    text-decoration: none;
+}
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #97BC62;
+    padding: 0px 200px;
+}
+.logo img {
+    width: 200px;
+    height: 80px;
+}
+h5.card-title a {
+    text-decoration: none;
+    color: black;
+}
+h5.card-title a:hover {
+    color:#007bff
+}
+.header-line ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.header-line ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    /* font-weight: bold; */
+}
+.header-line ul li a:hover {
+    color:#2C5F2D;
+}
+.search-form {
+    display: flex;
+    /* align-items: center; */
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.search-form input {
+    border: none;
+    padding: 8px;
+    outline: none;
+}
+.search-form button {
+    background: #00246B;
+    border: none;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+}
+.search-form button:hover{
+    background-color:#CADCFC;
+}
+/* Định dạng css cho phần main */
+main {
+    padding: 40px 20px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+.container-bill {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 30px;
+    margin-top: 50px;
+}
+.form-section, .info-section {
+    width: 60%;
+}
+/* Định dạng form */
+.form-bill {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+    margin-bottom: 15px;
+}
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+textarea {
+    height: 150px;
+}
+input[type="radio"] {
+    margin-right: 10px;
+}
+/* Nút thanh toán */
+button[name="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button[name="submit"]:hover {
+    background-color: #0056b3;
+}
+/* Định dạng thông tin đơn hàng */
+.info-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.mb-3 {
+    margin-bottom: 20px;
+}
+/* Thông tin tổng tiền */
+h4.text-danger {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+h5.card-title {
+    font-size: 18px;
+    color: #333;
+}
+/* Thẻ card trong chi tiết đơn hàng */
+.card {
+    width: 18rem;
+    margin-bottom: 20px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.card-body {
+    padding: 10px;
+}
+.card-body h5 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+h2 {
+    padding: 20px;
+    padding-left: 115px;
+    color: violet;
+}
+.col img {
+    width: 150px;
+    height: 150px;
+}
+.col.order-1 h6 {
+    padding-top: 35px;
+}
+.col.order-5 h6 {
+    padding-top: 35px;
+}
+/* Định dạng chung cho footer */
+.footer-top {
+    background-color: #97BC62;
+    color: rgb(14, 13, 13);
+    padding: 40px 0;
+}
+.footer-top .container {
+    max-width: 1200px;
+    margin: auto;
+}
+.footer-top .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-top .col {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+}
+.footer-top img {
+    max-width: 230px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.footer-top img:hover {
+    transform: scale(1.05);
+}
+.footer-top h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f1c40f;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.footer-top p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+.footer-top a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    display: inline-block;
+}
+.footer-top a:hover {
+    color: #007bff;
+    transform: translateX(5px);
+}
+.footer-top i {
+    margin:8px;
+    transition: transform 0.3s ease-in-out;
+}
+.footer-top a:hover i {
+    transform: scale(1.2);
+}
+h3 {
+    color: #bf1f6a;
+}
+.col p {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: justify;
+    transition: all 0.3s ease-in-out;
+}
+.col p:hover {
+    color: #d86310;
+    transform: scale(1.02); /* Hiệu ứng nhẹ khi rê chuột */
+}
+/* Định dạng phần footer-bottom */
+.footer-bottom {
+    text-align: center;
+    background-color: #2C5F2D;
+    padding: 15px 0;
+    color: black;
+    font-weight: bold;
+}
+.footer-bottom span {
+    font-weight: bold;
+}
