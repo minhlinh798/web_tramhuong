@@ -21,16 +21,6 @@ body {
     padding: 10px 50px;
     font-size: 15px;
 }
-/* Khi màn hình nhỏ hơn 768px (điện thoại) */
-@media (max-width: 768px) {
-    body {
-      font-size: 14px;
-      padding: 10px;
-    }
-    .container {
-      flex-direction: column; /* Chuyển từ ngang sang dọc */
-    }
-}
 .left p {
     font-weight: bold;
 }
