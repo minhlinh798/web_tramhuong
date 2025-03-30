@@ -234,6 +234,18 @@ if (isset($_GET['id'])) {
         .cart-buttons a:hover {
             background-color: #e00f0f;
         }
+        .footer-top p {
+            font-size: 14px;
+            line-height: 1.6;
+            transition: all 0.3s ease-in-out;
+        }
+        .footer-top p:hover {
+            color: #d86310;
+            transform: scale(1.02); /* Hiệu ứng nhẹ khi rê chuột */
+        }
+        h3 {
+            color: #bf1f6a;
+        }
     </style>
     <main>
         <div class="cart-container">

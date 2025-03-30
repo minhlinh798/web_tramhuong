@@ -223,7 +223,7 @@ $result = $conn->query($sql);
             background-color:#CADCFC;
         }
         /* Định dạng cho phần main */
-        .container {
+        .container-main {
             width: 80%;
             margin: 50px auto;
             background-color: #fff;
@@ -296,6 +296,11 @@ $result = $conn->query($sql);
         .footer-top p {
             font-size: 14px;
             line-height: 1.6;
+            transition: all 0.3s ease-in-out;
+        }
+        .footer-top p:hover {
+            color: #d86310;
+            transform: scale(1.02); /* Hiệu ứng nhẹ khi rê chuột */
         }
         .footer-top a {
             text-decoration: none;
@@ -331,7 +336,7 @@ $result = $conn->query($sql);
     </style>
     <!-- Main Content -->
     <main>
-        <div class="container">
+        <div class="container-main">
             <h1>Lịch Sử Mua Hàng</h1>
             <table class="order-history">
                 <thead>

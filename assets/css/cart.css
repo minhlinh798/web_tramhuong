@@ -212,10 +212,6 @@ main {
     display: inline-block;
     padding-bottom: 5px;
 }
-.footer-top p {
-    font-size: 14px;
-    line-height: 1.6;
-}
 .footer-top a {
     text-decoration: none;
     color: #333;
