@@ -12,7 +12,6 @@ if (isset($_GET['keyword'])) {
     exit();
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,6 +61,28 @@ if (isset($_GET['keyword'])) {
         </div>
     </header>
     <!-- Main Content -->
+    <style>
+        .card-title a {
+            font-size: 18px;
+            /* font-weight: bold; */
+            color: black;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .card-title a:hover {
+            color:#007bff
+        }
+        p.card-text {
+            font-size: 18px;
+            font-weight: bold;
+            color: #f3095d;
+            text-align: center;
+            margin-top: 20px;
+        }
+        h3 {
+            color: #bf1f6a;
+        }
+    </style>
     <main>
         <div class="conmemner">
             <div class="btn-line">

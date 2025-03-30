@@ -165,23 +165,6 @@ h2 {
     color: #e74c3c;
     font-weight: bold;
 }
-.card-title a {
-    font-size: 18px;
-    /* font-weight: bold; */
-    color: black;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-.card-title a:hover {
-    color:#007bff
-}
-p.card-text {
-    font-size: 18px;
-    font-weight: bold;
-    color: #f3095d;
-    text-align: center;
-    margin-top: 20px;
-}
 /* Định dạng chung cho footer */
 .footer-top {
     background-color: #97BC62;
@@ -237,9 +220,6 @@ p.card-text {
 }
 .footer-top a:hover i {
     transform: scale(1.2);
-}
-h3 {
-    color: #bf1f6a;
 }
 /* Định dạng phần footer-bottom */
 .footer-bottom {
