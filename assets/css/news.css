@@ -27,9 +27,6 @@ body {
 .left {
     padding-left: 150px;
 }
-.right {
-    padding-right: 150px;
-}
 .header-top .right ul {
     list-style: none;
     display: flex;
